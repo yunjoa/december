@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio ㅡ Contact</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind&family=Poppins:wght@300&family=Playfair+Display:ital@1&family=Mrs+Sheppards&display=swap&"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="index.html">Yun Jihwa</a></div>
+      <div class="menu-wrap">
+        <div class="menu menu-contact">
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu menu-about">
+          <a href="about.html">About</a>
+        </div>
+        <div class="menu menu-project">
+          <a href="projects.html">Project</a>
+        </div>
+      </div>
+    </nav>
+    <div class="page-turner"></div>
+    <section class="contact-wrapper">
+      <div class="contact-info">
+        <div class="title">
+          Say <br />
+          Hello.
+        </div>
+        <p class="smallFont">
+          Ask me anything or just Say hi <br />
+          Feel free to drop me an email anytime. <br />
+          I'd love you hear from you.
+        </p>
+      </div>
+      <div class="contactForm-wrap">
+        <form class="contactForm" id="contactForm">
+          <div class="contactFormUnit">
+            <label for="name">Name </label>
+            <input
+              type="text"
+              class="typeInput"
+              name="from_name"
+              id="from_name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="contactFormUnit">
+            <label for="email">Email </label>
+            <input
+              type="email"
+              class="typeInput"
+              name="from_email"
+              id="from_email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="contactFormUnit">
+            <label for="message">Message</label>
+            <input
+              type="text"
+              class="typeInput"
+              name="message"
+              id="message"
+              placeholder="Message"
+              required
+            />
+          </div>
+          <div class="contactFormUnit">
+            <input type="submit" class="buttonInput" value="SEND" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

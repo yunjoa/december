@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>기능테스트</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .contents {
+        display: flex;
+        margin: 8px;
+        height: 500px;
+      }
+      .page {
+        height: 100%;
+      }
+      .page01 {
+        width: 50%;
+        background-color: tomato;
+      }
+      .page02 {
+        width: 50%;
+        flex-direction: row;
+      }
+      .con1 {
+        background-color: cornflowerblue;
+        height: 50%;
+      }
+      .con2 {
+        background-color: olivedrab;
+        height: 50%;
+      }
+      .full {
+        width: 100%;
+      }
+    </style>
+
+    <div id="expendBtn">
+      <button id="BtnL" data-btn="left">BtnL</button>
+      <button id="BtnR" data-btn="right">BtnR</button>
+    </div>
+
+    <div class="contents">
+      <div class="page01 page">
+        <div>test</div>
+      </div>
+
+      <div class="page02 page">
+        <div class="con1">test</div>
+        <div class="con2">test</div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#BtnL").on("click", function () {
+          if ($("#BtnL").data("btn") === "left") {
+            $(".page01").show();
+            $(".page02").hide();
+            $("#BtnL").text("BtnM");
+            $("#BtnL").data("btn", "home");
+          } else if ($("#BtnL").data("btn") === "home") {
+            $(".page01").hide();
+            $(".page02").show();
+
+            $("#BtnL").data("btn", "left");
+            $("#BtnL").text("BtnL");
+          }
+
+          $("#BtnR").on("click", function () {
+            if ($(".page01").hasClass(".full") === true) {
+              $(".page01").removeClass(".full");
+              $(".page01").css("display", "none");
+            } else {
+              $(".page02").addClass(".full");
+              $(".page02").css("display", "block");
+            }
+          });
+        });
+
+        $("#BtnR").on("click", function () {
+          $(".page02").addClass(".full");
+          $(".page01").css("display", "none");
+
+          $("#BtnL").on("click", function () {
+            if ($(".page02").hasClass(".full") === true) {
+              $(".page02").removeClass(".full");
+              $(".page02").css("display", "none");
+            } else {
+              $(".page01").addClass(".full");
+              $(".page01").css("display", "block");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

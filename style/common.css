@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  position: relative;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+}
+
+.page-turner {
+  z-index: 9999;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-animation: change 0.5s ease forwards;
+          animation: change 0.5s ease forwards;
+}
+
+@-webkit-keyframes change {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes change {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.pop {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.pop.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+nav {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: pixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 16px 30px 32px;
+}
+
+nav .logo {
+  z-index: 500;
+  position: fixed;
+  width: 130px;
+  font-family: "Mrs Sheppards", cursive;
+  font-size: 30px;
+}
+
+nav .logo a {
+  color: #3a3131;
+  text-decoration: none;
+}
+
+nav .menu-wrap {
+  position: fixed;
+  z-index: 9999;
+  top: 16px;
+  right: 16px;
+  width: 240px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .menu-wrap .menu {
+  padding: 4px 20px;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 2;
+  mix-blend-mode: difference;
+}
+
+nav .menu-wrap .menu a {
+  z-index: 9999;
+  text-decoration: none;
+  color: #555;
+}
+
+nav .menu-wrap .menu a:hover {
+  color: #bbb;
+}
+
+section {
+  padding: 0 30px 16px 30px;
+}
+/*# sourceMappingURL=common.css.map */

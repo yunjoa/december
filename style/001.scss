@@ -1,0 +1,62 @@
+
+.contentsWrap{
+  width: 100%;
+  height: 100vh;
+  .two-sided{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+
+.leftCont{
+  width: 35%;
+  height: 100%;
+  position: relative;
+  word-break: keep-all;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 32px;
+  p{
+    display: inline-block;
+    width: 100%;
+    a{
+      text-decoration: none;
+      // &::hover{}
+    }
+    .proj-title{
+      display: block;
+      font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 10px 0 0 0;
+    }
+    .proj-details{
+      display: block;
+      font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica;
+      font-size: 14px;
+      font-weight: 200;
+      padding: 20px 0 0 0;
+      line-height: 1.2;
+    }
+  }
+}
+
+.rightCont{
+  width: 65%;
+  padding: 32px;
+  height: 100%;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.rightCont::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+
+

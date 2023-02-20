@@ -1,0 +1,380 @@
+@charset "UTF-8";
+body {
+  background-color: whites;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+section.project {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  font-size: 160px;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  word-break: keep-all;
+  display: inline-block;
+}
+
+.project-wrapper {
+  width: 100%;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-overflow: ellipsis;
+  padding-top: 30px;
+}
+
+.project-wrapper .swiper-container {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 85px;
+}
+
+.project-wrapper .swiper-container .swiper-wrapper {
+  width: 100%;
+  will-change: transform;
+}
+
+@media (max-width: 705px) {
+  .project-wrapper {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 630px) {
+  .swiper-wrapper {
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  padding: 0 0 30px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.swiper-slide:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 630px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-slide {
+    width: 25%;
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+}
+
+.swiper-pagination.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background: tomato;
+  width: 22px;
+  height: 4px;
+  border-radius: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet.swiper-pagination-bullet {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 40px;
+  }
+}
+
+.slide-image {
+  height: 70%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-content {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.slide-image-con {
+  padding: 0 30px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30%;
+  position: relative;
+}
+
+.slide-image-con h4 {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 0 16px;
+  padding-top: 34px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.slide-image-con p {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.8;
+  margin-top: 0;
+  font-size: 14px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-overflow: ellipsis;
+  height: auto;
+}
+
+.slide-image-con .dates {
+  font-size: 14px;
+  color: #c2c0e0;
+  position: absolute;
+  bottom: 0%;
+}
+
+.modal {
+  z-index: 9999;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal__content {
+  background-color: white;
+  position: relative;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  opacity: 0;
+  -webkit-animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 26px;
+}
+
+.modal__content .proj__title {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  word-break: keep-all;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.modal__content .proj__title .details {
+  font-size: 18px;
+  color: #c2c0e0;
+  font-weight: 200;
+  padding: 20px 0;
+}
+
+.modal__content .proj__title .proj-icons {
+  padding-top: 20px;
+}
+
+.modal__content .proj__title .proj-icons a {
+  text-decoration: none;
+}
+
+.modal__content .proj__content {
+  width: 70%;
+  word-break: keep-all;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 40px;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.modal__content .proj__content::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
+.modal__content .proj__content .proj__img {
+  padding: 60px 0;
+  width: 100%;
+}
+
+.modal__content .proj__content .proj__img img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.modal__content .proj__content .proj__strong {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(0.8) translateY(1000px);
+            transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(0.8) translateY(1000px);
+            transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__content .proj__title, .modal__content .proj__content {
+    width: 100%;
+  }
+  .modal__content .proj__title .details {
+    padding: 10px 0;
+  }
+  .modal__content .proj__title .proj-icons {
+    padding: 0px;
+  }
+  .modal__content .proj__content {
+    padding-left: 0px;
+  }
+}
+/*# sourceMappingURL=project.css.map */

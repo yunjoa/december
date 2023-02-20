@@ -1,0 +1,125 @@
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contact-wrapper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-info {
+    width: 35%;
+    // padding: 0 150px 0px 50px;
+
+    .title {
+      width: 100%;
+      font-size: 160px;
+      font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica,
+        "Apple SD Gothic Neo", sans-serif;
+    }
+    .smallFont {
+      color: rgb(100, 100, 100);
+      line-height: 1.4;
+      font-size: 18px;
+      font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica,
+        "Apple SD Gothic Neo", sans-serif;
+      padding-top: 20px;
+    }
+  }
+
+  .contactForm-wrap {
+    width: 35%;
+    padding: 0 0 0 40px;
+  }
+}
+
+.contactFormUnit {
+  label {
+    display: block;
+    font-family: "HIND", "Malgun Gothic", "맑은 고딕", helvetica,
+      "Apple SD Gothic Neo", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .typeInput {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px 0 40px;
+    border: none;
+    outline: none !important;
+    background: transparent;
+    border-bottom: solid 2px #3e3e3e;
+    padding: 0 10px;
+  }
+}
+
+.buttonInput {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo",
+    sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+
+  text-decoration: none;
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: 0.25s;
+  background-color: black;
+  color: white;
+}
+.buttonInput:hover {
+  // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.buttonInput:active {
+  transform: scale(1.3);
+}
+
+
+@media (max-width: 1200px) {
+  .contact-wrapper{
+    .contactForm-wrap, .contact-info {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  body{
+    overflow: auto;
+  }
+  .contact-wrapper{
+    display: block; 
+    .contact-info{
+      width: 100%;
+      padding: 40px 0 80px;
+      text-align: center;
+    }
+    .contactForm-wrap{
+      width: 100%;
+      padding: 0 0 80px 0;
+      text-align: center;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 1027px) {
+  body{
+    background-color: aliceblue;
+  }
+}
