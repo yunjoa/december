@@ -16,7 +16,7 @@ section.project {
 .title {
   width: 100%;
   font-size: 160px;
-  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   word-break: keep-all;
   display: inline-block;
 }

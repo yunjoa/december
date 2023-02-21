@@ -26,14 +26,14 @@ body {
 .contact-wrapper .contact-info .title {
   width: 100%;
   font-size: 160px;
-  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 }
 
 .contact-wrapper .contact-info .smallFont {
   color: #646464;
   line-height: 1.4;
   font-size: 18px;
-  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-family: "Poppins", "hind", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   padding-top: 20px;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .contactFormUnit label {
   display: block;
-  font-family: "HIND", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-family: "HIND", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   font-size: 1em;
   font-weight: 600;
 }
@@ -67,7 +67,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 10px;
-  font-family: "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-family: "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   font-size: 0.8em;
   font-weight: 600;
   text-decoration: none;
